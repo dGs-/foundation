@@ -56,7 +56,6 @@
         .off('.clearing')
         .on('click.fndtn.clearing', 'ul[' + this.attr_name() + '] li ' + this.settings.open_selectors,
           function (e, current, target) {
-            console.log('opened...');
             var current = current || S(this),
                 target = target || current,
                 next = current.next('li'),
@@ -67,7 +66,6 @@
 
             if (!settings) {
               self.init();
-      console.log(this.attr_name());
               settings = current.closest('[' + self.attr_name() + ']').data(self.attr_name(true) + '-init');
             }
 
