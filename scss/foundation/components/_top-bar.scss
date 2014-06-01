@@ -209,7 +209,7 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
           font-weight: $topbar-menu-link-weight;
           position: relative;
           display: block;
-          padding: 0 $topbar-link-padding;
+          padding: 0 $topbar-link-padding 0 0;
           height: $topbar-height;
           line-height: $topbar-height;
         }
@@ -219,7 +219,6 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
           #{$opposite-direction}: $topbar-link-padding;
           top: 50%;
           margin-top: -16px;
-          padding-#{$default-float}: 40px;
 
           a {
             @if $text-direction == rtl {
@@ -227,11 +226,11 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
             }
             height: 34px;
             line-height: 33px;
-            padding: 0;
+            padding: 0 34px 0 0;
             color: $topbar-menu-link-color;
             position: relative;
 
-            &::after {
+            & {
               // @include hamburger icon
               //
               // We use this to create the icon with three lines aka the hamburger icon, the menu-icon or the navicon
@@ -243,8 +242,7 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
               // $color - icon color
               // $hover-color - icon color during hover, here it is set the same as $color because the values are changed on line 264
               // $offcanvas - Set to false of @include in topbar
-              @include hamburger(16px, false, 0, 1px, 6px, $topbar-menu-icon-color, $topbar-menu-icon-color, false );
-              #{$opposite-direction}: 0;
+              @include hamburger(16px, false, 0, 1px, 6px, $topbar-menu-icon-color, $topbar-menu-icon-color, false);
             }
           }
         }
