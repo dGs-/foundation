@@ -209,7 +209,7 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
           font-weight: $topbar-menu-link-weight;
           position: relative;
           display: block;
-          padding: 0 $topbar-link-padding 0 0;
+          padding: 0 $topbar-link-padding;
           height: $topbar-height;
           line-height: $topbar-height;
         }
@@ -226,7 +226,7 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
             }
             height: 34px;
             line-height: 33px;
-            padding: 0 34px 0 0;
+            padding: 0 $topbar-link-padding*3 0 $topbar-link-padding;
             color: $topbar-menu-link-color;
             position: relative;
 

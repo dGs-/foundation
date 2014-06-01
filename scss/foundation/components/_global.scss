@@ -159,7 +159,7 @@ $base-line-height: 150% !default;
     @else {
       top: 50%;
       margin-top: -$width/2;
-      #{$opposite-direction}: 10px;
+      #{$opposite-direction}: $topbar-link-padding;
     }
 
     box-shadow:
