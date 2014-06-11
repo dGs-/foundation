@@ -30,9 +30,9 @@
 // $include-print-styles: true;
 // $include-html-global-classes: $include-html-classes;
 
-// Grid
+// Grid 
 
-// $include-html-grid-classes: $include-html-classes;
+// $include-html-block-grid-classes: $include-html-classes; 
 // $include-xl-html-grid-classes: false;
 
 // $row-width: rem-calc(1000);
@@ -716,14 +716,13 @@
 // $tabbar-menu-icon-text-indent: rem-calc(35);
 // $tabbar-menu-icon-width: $tabbar-height;
 // $tabbar-menu-icon-height: $tabbar-height;
-// $tabbar-menu-icon-line-height: rem-calc(33);
 // $tabbar-menu-icon-padding: 0;
 
 // $tabbar-hamburger-icon-width: rem-calc(16);
 // $tabbar-hamburger-icon-left: false;
 // $tabbar-hamburger-icon-top: false;
-// $tapbar-hamburger-icon-thickness: 1px;
-// $tapbar-hamburger-icon-gap: 6px;
+// $tabbar-hamburger-icon-thickness: 1px;
+// $tabbar-hamburger-icon-gap: 6px;
 
 // Off Canvas Back-Link Overlay
 // $off-canvas-overlay-transition: background 300ms ease;
